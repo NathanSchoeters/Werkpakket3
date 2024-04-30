@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: Illustrashop
+primary: true
+siteGroup: b983c117-aebe-4dd5-92b8-5d0d49b48b82 # Illustrashop
+sortOrder: 1
