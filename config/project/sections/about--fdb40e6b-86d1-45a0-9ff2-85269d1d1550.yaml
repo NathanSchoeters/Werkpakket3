@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - dc56cc87-678f-4d74-a517-414aba78a3b2 # About
+handle: about
+maxAuthors: 1
+name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4a826233-2673-4533-bdf4-5dd6f0487adc: # Illustrashop
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_entry
+    uriFormat: about
+type: single
