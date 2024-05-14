@@ -217,7 +217,8 @@
 
 .gallery {
   width: 100%;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,7 +246,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .products-filters-search {
   height: 30px;
