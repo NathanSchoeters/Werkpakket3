@@ -1,4 +1,4 @@
-dateModified: 1715690473
+dateModified: 1715702385
 email:
   fromEmail: nathan.ddk@outlook.com
   fromName: Illustrashop
@@ -23,7 +23,9 @@ meta:
     6f2b4685-b2b6-4e96-94e0-958af07acb19: stickers # stickers
     8f72d8fc-c020-40aa-a013-0550c3735702: cardImage # cardImage
     56a88afc-1100-4ee0-8f36-380a2e7fdc28: 'Public Schema' # Public Schema
+    59a075c8-2b2c-486f-9240-3f2342039ada: navLinks # navLinks
     269e7b2c-b1d6-4d4f-9fa1-eb0e7505e651: stock # stock
+    468d3ec8-1c9d-49d3-a79a-8bbd41c6a7e4: navLinks # navLinks
     1279f5c0-f5c7-4b61-beea-a683143f92b6: stickerCategory # stickerCategory
     86945d3a-9e49-4245-b5cf-e27ed83e8f76: Images # Images
     324648bc-f878-478b-804e-1e657b33c79d: aboutDescription # aboutDescription
@@ -32,10 +34,13 @@ meta:
     a7e94ab7-815d-4e39-be33-9d713992d759: cardDescription # cardDescription
     b3de9e6b-9d6f-49b1-acac-90c18bdbd2c2: cardPrice # cardPrice
     b983c117-aebe-4dd5-92b8-5d0d49b48b82: Illustrashop # Illustrashop
+    c4678c69-60b1-49d7-8fc7-d6e0f4e8f95c: linkDestination # linkDestination
     cfac5752-0197-4073-aff8-92bc90f7c127: siteLogo # siteLogo
     cfbedfb0-7790-41c9-a3cc-0f9f7cdb7227: stickers # stickers
+    d936dbbe-9a7e-4c97-8a0a-2ff45c10b383: Header # Header
     dc56cc87-678f-4d74-a517-414aba78a3b2: About # About
     ddfe4e50-9930-4426-8745-eccf0d51b848: 'Stickers Overview' # Stickers Overview
+    e4a41ba9-c865-427e-877b-6fa067c9d00f: link # link
     f3e5a5c7-e072-47da-845f-69c01d2a16a0: VAT # VAT
     f71a819e-0877-407a-a17a-b82f88e5e2c0: aboutTitle # aboutTitle
     f353af18-96fc-4a3f-9c95-586303d02d2c: Home # Home

@@ -272,7 +272,6 @@
             justify-content: center;
             &-price{
                 @include titleLayout(38px);
-                margin-bottom: -10px;
             }
             &-text{
                 @include textLayout;
