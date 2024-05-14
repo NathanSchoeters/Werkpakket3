@@ -4,19 +4,45 @@
 
 {% set searchParam = craft.app.request.getParam('search') %}
 
+{% set categoryParam = craft.app.request.getParam('category') %}
+
+{% if categoryParam|length %}
+    {%  set stickersQuery = stickersQuery.relatedTO( { targetElement: categoryParam} ) %}
+{% endif %}
+
 {% if searchParam|length %}
     {%  set stickersQuery = stickersQuery.search(searchParam) %}
 {% endif %}
 
+{% set stickers = stickersQuery.all() %}
 
-{% set stickers = craft.entries.section('stickers').all() %}
+{% set categories = craft.entries.section('stickercategory').all %}
+
 
 {% block content %}
+    <section class="intro">
+        <h1 class="intro-header">{{stickersOverview.abouttitle}}</h1>
+        <p class="intro-text">{{stickersOverview.aboutdescription}}</p>
+    </section>
 
-    <input type="text" name="search" id="">
+    <section class="products">
+        <div class="products-filters">
+            <form action="">
+                <input type="text" name="search" id="" class="products-filters-search" placeholder="Search..">
+                {% for category in categories %}
+                    <button type="submit" name="category" class="products-filters-button" value="{{ category.id }}">{{ category.title}} stickers</button>
+                {% endfor %}
+                <button type="submit" name="all" class="products-filters-button package">All</button>
+            </form>
+        </div>
 
-{% for sticker in stickers %}
-    {% include "_snippets/_stickerCard.twig" %}
-{% endfor %}
+        <div class="gallery">
+            <div class="cards-wrapper">
+                {% for sticker in stickers %}
+                    {% include "_snippets/_stickerCard.twig" %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
 {% endblock %}

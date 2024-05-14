@@ -1,8 +1,8 @@
 columnSuffix: null
-handle: cardDescription
+handle: abouttitle
 instructions: null
-name: cardDescription
-searchable: true
+name: aboutTitle
+searchable: false
 settings:
   byteLimit: null
   charLimit: null
