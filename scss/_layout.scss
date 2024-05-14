@@ -90,8 +90,8 @@
 }
 .gallery{
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     @include flexLayout;
     flex-direction: column;
     &-title{

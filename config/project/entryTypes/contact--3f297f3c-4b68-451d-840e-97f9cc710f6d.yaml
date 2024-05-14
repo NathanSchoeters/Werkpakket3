@@ -1,0 +1,50 @@
+color: violet
+fieldLayouts:
+  4d196b93-e0aa-4557-95f4-ceb365c4c687:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9e29869c-5da1-4e69-b0e0-a5f6b8614cd4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bafde433-8122-496e-a44f-a6d8b05db21d
+        userCondition: null
+handle: contact
+hasTitleField: true
+icon: address-card
+name: contact
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

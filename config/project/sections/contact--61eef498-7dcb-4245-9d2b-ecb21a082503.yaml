@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - dc56cc87-678f-4d74-a517-414aba78a3b2 # About
-handle: about
+  - 3f297f3c-4b68-451d-840e-97f9cc710f6d # contact
+handle: contact
 maxAuthors: 1
-name: About
+name: contact
 previewTargets:
   -
     __assoc__:
@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _contact/_contact.twig
-    uriFormat: about
+    uriFormat: contact
 type: single
