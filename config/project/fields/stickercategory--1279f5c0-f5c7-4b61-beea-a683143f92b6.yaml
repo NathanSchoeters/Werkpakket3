@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: stickercategory
+instructions: null
+name: stickerCategory
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:03c0ccce-3c8f-4b90-b67e-5f599166b630' # stickerCategory
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

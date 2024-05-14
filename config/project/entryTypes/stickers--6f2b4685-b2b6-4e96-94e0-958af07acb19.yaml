@@ -1,0 +1,140 @@
+color: green
+fieldLayouts:
+  303d6154-459e-4642-afd7-a253f29c44fd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c988c1b8-e839-4bcc-9a49-e5159f3e465e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8f72d8fc-c020-40aa-a013-0550c3735702 # cardImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 999db6ea-0226-4d07-81f1-f1ce41531d17
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b3de9e6b-9d6f-49b1-acac-90c18bdbd2c2 # cardPrice
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28494267-c611-4c0c-b695-fb7470b19e38
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a7e94ab7-815d-4e39-be33-9d713992d759 # cardDescription
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 684b8a26-be80-4260-8d07-ab4a5fea1880
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f3e5a5c7-e072-47da-845f-69c01d2a16a0 # VAT
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e57d77d-aee6-4106-9399-24b6a6352e21
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 269e7b2c-b1d6-4d4f-9fa1-eb0e7505e651 # stock
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e659c80b-306a-475d-b376-7b77c891e239
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1279f5c0-f5c7-4b61-beea-a683143f92b6 # stickerCategory
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 488bea98-c27b-4f5d-b6ba-ab32659f6d52
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b9d8965b-0cb4-411f-b602-8670cf2e656c
+        userCondition: null
+handle: stickers
+hasTitleField: true
+icon: gift
+name: stickers
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,79 @@
+{% extends "_layout.twig" %}
+
+{% set stickersQuery = craft.entries.section('stickers').limit(8) %}
+
+{% set searchParam = craft.app.request.getParam('search') %}
+
+{% set categoryParam = craft.app.request.getParam('category') %}
+
+{% if categoryParam|length %}
+    {%  set stickersQuery = stickersQuery.relatedTO( { targetElement: categoryParam} ) %}
+{% endif %}
+
+{% if searchParam|length %}
+    {%  set stickersQuery = stickersQuery.search(searchParam) %}
+{% endif %}
+
+{% set stickers = stickersQuery.all() %}
+
+{% set categories = craft.entries.section('stickercategory').all %}
+
+
+{% paginate stickersQuery as pageInfo, stickers %}
+
+{% block content %}
+    <section class="intro">
+        <h1 class="intro-header">{{stickersOverview.abouttitle}}</h1>
+        <p class="intro-text">{{stickersOverview.aboutdescription}}</p>
+    </section>
+
+    <section class="products">
+        <div class="products-filters">
+            <form action="">
+                <input type="text" name="search" id="" class="products-filters-search" placeholder="Search..">
+                {% for category in categories %}
+                    <button type="submit" name="category" class="products-filters-button" value="{{ category.id }}">{{ category.title}} stickers</button>
+                {% endfor %}
+                <button type="submit" name="all" class="products-filters-button package">All</button>
+            </form>
+        </div>
+
+        <div class="gallery">
+            <div class="cards-wrapper">
+                {% for sticker in stickers %}
+                    {% include "_snippets/_stickerCard.twig" %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="products-pages">
+            <nav class="pagesNav" role="navigation" aria-label="Search result pagination" class="navTest">
+                {% if pageInfo.getPrevUrl() %}
+                    <a class="products-pages-button" href="{{ pageInfo.getPrevUrl() }}"><</a>
+                {% endif %}
+        
+                <ul class="paginationList">
+                  {% for p, url in pageInfo.getDynamicRangeUrls(5) %}
+                    <li>
+                      {{ tag('a', {
+                        text: p,
+                        href: url,
+                        class: 'products-pages-button',
+                        aria: {
+                          label: "Go to page #{p} of #{pageInfo.totalPages}",
+                        },
+                      }) }}
+                    </li>
+                  {% endfor %}
+                </ul>
+        
+                {% if pageInfo.getNextUrl() %}
+                    <a class="products-pages-button" href="{{ pageInfo.getNextUrl() }}">></a>
+                {% endif %}
+            </nav>
+        </div>
+    </section>
+
+
+    
+{% endblock %}

@@ -1,0 +1,27 @@
+fieldLayouts:
+  0b2b92fe-5bce-4367-91a8-02174c3cae78:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1d47ddfe-72ec-4111-b1cd-3caa343d172b # Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf600054-92c9-49ae-91ef-59ff4a472c83
+            userCondition: null
+            warning: null
+            width: 100
+        name: SiteLogo
+        uid: c638fe37-4cb8-44d2-98f9-aefc66997d6f
+        userCondition: null
+handle: sitelogo
+name: siteLogo
+sortOrder: 1

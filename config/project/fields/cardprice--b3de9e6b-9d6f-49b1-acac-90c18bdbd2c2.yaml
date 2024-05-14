@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: cardprice
+instructions: null
+name: cardPrice
+searchable: true
+settings:
+  currency: EUR
+  defaultValue: null
+  max: null
+  min: 0
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money
