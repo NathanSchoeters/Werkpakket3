@@ -1,0 +1,68 @@
+fieldLayouts:
+  89385609-28ab-4f66-aa7a-e2392e35ece5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            heading: ''
+            type: craft\fieldlayoutelements\Heading
+            uid: ffad046e-050f-441b-85a8-53a518dfa4ee
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: a3b30033-af70-4cfc-8453-9d400f4772fc # footerTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58365eb2-7a08-437a-b53c-045b8837ad24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2a02c533-c1ea-44a2-bd52-7f3aa79526d7
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: c14e826c-f4e2-4135-bdc4-450ae0b6f4da # phoneNumber
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed92a456-1a86-4732-aff6-4f4d8b10ae3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 59b6c19f-781a-4a02-b824-593fe740878e # email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6bb42194-b65b-482e-b237-197b74cf608f
+            userCondition: null
+            warning: null
+            width: 100
+        name: FooterContent
+        uid: 515116c5-76d3-443a-be6a-8c5491047395
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 3

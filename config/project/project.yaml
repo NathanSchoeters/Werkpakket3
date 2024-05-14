@@ -1,4 +1,4 @@
-dateModified: 1715709358
+dateModified: 1715710827
 email:
   fromEmail: nathan.ddk@outlook.com
   fromName: Illustrashop
@@ -26,18 +26,22 @@ meta:
     8f72d8fc-c020-40aa-a013-0550c3735702: cardImage # cardImage
     56a88afc-1100-4ee0-8f36-380a2e7fdc28: 'Public Schema' # Public Schema
     59a075c8-2b2c-486f-9240-3f2342039ada: navLinks # navLinks
+    59b6c19f-781a-4a02-b824-593fe740878e: email # email
     61eef498-7dcb-4245-9d2b-ecb21a082503: contact # contact
     122c5f34-d873-4379-8b88-5d8fab0b0bd6: New # New
     269e7b2c-b1d6-4d4f-9fa1-eb0e7505e651: stock # stock
+    395ce290-08d0-4a4a-884a-2acc283a0873: Footer # Footer
     468d3ec8-1c9d-49d3-a79a-8bbd41c6a7e4: navLinks # navLinks
     1279f5c0-f5c7-4b61-beea-a683143f92b6: stickerCategory # stickerCategory
     86945d3a-9e49-4245-b5cf-e27ed83e8f76: Images # Images
     324648bc-f878-478b-804e-1e657b33c79d: aboutDescription # aboutDescription
     347620c5-2d4f-42f5-8745-b16fff55dec6: Home # Home
     67215269-f89c-4e18-afb6-1bd0c79a3280: productBeschrijving # productBeschrijving
+    a3b30033-af70-4cfc-8453-9d400f4772fc: footerTitle # footerTitle
     a7e94ab7-815d-4e39-be33-9d713992d759: cardDescription # cardDescription
     b3de9e6b-9d6f-49b1-acac-90c18bdbd2c2: cardPrice # cardPrice
     b983c117-aebe-4dd5-92b8-5d0d49b48b82: Illustrashop # Illustrashop
+    c14e826c-f4e2-4135-bdc4-450ae0b6f4da: phoneNumber # phoneNumber
     c4678c69-60b1-49d7-8fc7-d6e0f4e8f95c: linkDestination # linkDestination
     cfac5752-0197-4073-aff8-92bc90f7c127: siteLogo # siteLogo
     cfbedfb0-7790-41c9-a3cc-0f9f7cdb7227: stickers # stickers
