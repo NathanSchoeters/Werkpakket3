@@ -22,7 +22,7 @@ siteSettings:
   4a826233-2673-4533-bdf4-5dd6f0487adc: # Illustrashop
     enabledByDefault: true
     hasUrls: true
-    template: stickers/_entry
+    template: _stickers/_entry
     uriFormat: 'our-stickers/{slug}'
 structure:
   maxLevels: null
