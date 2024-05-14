@@ -1,0 +1,22 @@
+{% extends "_layout.twig" %}
+
+{% set stickersQuery = craft.entries.section('stickers') %}
+
+{% set searchParam = craft.app.request.getParam('search') %}
+
+{% if searchParam|length %}
+    {%  set stickersQuery = stickersQuery.search(searchParam) %}
+{% endif %}
+
+
+{% set stickers = craft.entries.section('stickers').all() %}
+
+{% block content %}
+
+    <input type="text" name="search" id="">
+
+{% for sticker in stickers %}
+    {% include "_snippets/_stickerCard.twig" %}
+{% endfor %}
+
+{% endblock %}

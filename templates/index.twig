@@ -1,45 +1,93 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    {% set image = entry.logo.one() %}
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>Welcome to Craft CMS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <link rel="stylesheet" href="{{siteUrl}}css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/570fd61456.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="navbar">
-        <div class="navbar-logo">
-            <img class="logo-img" src="{{image.url}}" alt="My Logo">
-        </div>
-        <nav class="navbar-navigation">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="./index.html">Home</a></li>
-                <li class="nav-list-item"><a href="./overzicht.html">Products</a></li>
-                <li class="nav-list-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="navbar-buttons">
-            <a href="./login.html"><button type="button" class="navbar-button"><i class="fa-solid fa-user"></i></button></a>
-            <a href=""><button type="button" class="navbar-button"><i class="fa-solid fa-cart-shopping"></i></button></a>
-        </div>
-    </header>
+{% extends "layout" %}
+{% block content %}
 
-    {% block content %}{% endblock %}
-
-    <footer class="footer" id="contact">
-        <h1 class="footer-title">Contact</h1>
-        <div class="footer-contact">
-            <ul class="footer-contact-list">
-                <li class="footer-contact-list-item"><i class="fa-solid fa-phone"></i> 0477 95 65 88</li>
-                <li class="footer-contact-list-item"><i class="fa-solid fa-envelope"></i> Illustrashop@outlook.com</li>
-            </ul>
+{% set aboutImg = about.logo.one() %}
+<section class="about">
+    <div class="about-info">
+        <div class="about-info-left">
+            <h1 class="about-info-heading">{{about.title}}</h1>
+            <p class="about-info-text"> 
+                {{about.aboutdescription}}
+            </p>
         </div>
-        <h1 class="footer-title"><a class="footer-title-link" href="#top"><i class="fa-solid fa-circle-arrow-up footer-icon"></i></a></h1>
-    </footer>
-</body>
-</html>
+        <div class="about-info-right">
+            <img class="about-info-image" src="{{aboutImg.url}}" alt="Illusration">
+        </div>
+    </div>
+</section>
+
+
+{% set stickers = craft.entries.section('stickers').orderBy('stock desc').limit(3).all() %}
+
+
+{% if stickers|length > 0%}
+    <section class="gallery">
+        <h1 class="gallery-title">Best Sold</h1>
+        <div class="cards-wrapper">
+            {% for sticker in stickers %}
+                {% include '_snippets/_stickerCard.twig' %}
+            {% endfor %}
+        </div>
+    </section>
+    {% else %}
+    <div>There are no stickers at this moment.</div>
+{% endif %}
+
+
+{# <section class="gallery">
+    <h1 class="gallery-title">Best Sold</h1>
+    <div class="cards-wrapper">
+        <a class="product-link" href="./product.html">
+            <div class="card">
+                <div class="card-top">
+                    <img class="card-top-image" src="./assets/Illustration1.png" alt="Illustration1">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-bottom-title">
+                        <h1 class="card-bottom-title-header">Ahsoka sticker</h1>
+                        <h2 class="card-bottom-title-price">€1.50</h2>
+                    </div>
+                    <div class="card-bottom-info">
+                        <p class="card-bottom-info-text">This sticker is 5x8 cm.</p>
+                        <button class="card-bottom-info-button" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+         </a>
+         <a class="product-link" href="./product.html">
+            <div class="card">
+                <div class="card-top">
+                    <img class="card-top-image" src="./assets/Illustration2.png" alt="Illustration2">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-bottom-title">
+                        <h1 class="card-bottom-title-header">Darksaber sticker</h1>
+                        <h2 class="card-bottom-title-price">€0.50</h2>
+                    </div>
+                    <div class="card-bottom-info">
+                        <p class="card-bottom-info-text">This sticker is 1x5 cm.</p>
+                        <button class="card-bottom-info-button" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+         </a>
+         <a class="product-link" href="./product.html">
+            <div class="card">
+                <div class="card-top">
+                    <img class="card-top-image" src="./assets/Package1.png" alt="Package1">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-bottom-title">
+                        <h1 class="card-bottom-title-header">Lightsaber pack</h1>
+                        <h2 class="card-bottom-title-price">€2.50</h2>
+                    </div>
+                    <div class="card-bottom-info">
+                        <p class="card-bottom-info-text">These stickers are 1x5 cm.</p>
+                        <button class="card-bottom-info-button" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</section> #}
+{% endblock %}

@@ -1,0 +1,50 @@
+color: red
+fieldLayouts:
+  f8c0315f-a964-4198-a8f6-5bb0ded84fb4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 62fcef4a-c7c7-48f8-919d-255326fb426c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bad8e944-4d07-42d6-9909-779ca03b6488
+        userCondition: null
+handle: stickersOverview
+hasTitleField: true
+icon: basket-shopping
+name: 'Stickers Overview'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,12 @@
+{% extends '_layout.twig' %}
+
+{% set image = entry.cardimage.one %}
+
+{% block content %}
+
+{% if image %}
+    <img src="{{image.url}}" alt="">
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: fotos
+instructions: null
+name: Fotos
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:86945d3a-9e49-4245-b5cf-e27ed83e8f76' # Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:86945d3a-9e49-4245-b5cf-e27ed83e8f76' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: 'Voeg een foto toe.'
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:86945d3a-9e49-4245-b5cf-e27ed83e8f76' # Images
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,20 @@
+<a class="product-link" href="./product.html">
+    <div class="card">
+        <div class="card-top">
+            {% set stickerImage = sticker.cardimage.one() %}
+            {% if stickerImage %}
+                <img src="{{stickerImage.url}}" alt="{{stickerImage.title}}" class="card-top-image">
+            {% endif %}
+        </div>
+        <div class="card-bottom">
+            <div class="card-bottom-title">
+                <h1 class="card-bottom-title-header">{{sticker.title}}</h1>
+                <h2 class="card-bottom-title-price">{{sticker.cardprice|money}}</h2>
+            </div>
+            <div class="card-bottom-info">
+                <p class="card-bottom-info-text">{{sticker.cardDescription}}</p>
+                <button class="card-bottom-info-button" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+ </a>

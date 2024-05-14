@@ -1,0 +1,18 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6a400ca0-3ee3-4d75-8e6c-34fb5c2438bb # stickerCategory
+handle: stickercategory
+maxAuthors: 1
+name: stickerCategory
+propagationMethod: all
+siteSettings:
+  4a826233-2673-4533-bdf4-5dd6f0487adc: # Illustrashop
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: c8b84628-d2e1-4cc5-b3cf-7fa3abd1f22e
+type: structure
