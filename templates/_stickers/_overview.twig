@@ -1,6 +1,6 @@
 {% extends "_layout.twig" %}
 
-{% set stickersQuery = craft.entries.section('stickers') %}
+{% set stickersQuery = craft.entries.section('stickers').limit(8) %}
 
 {% set searchParam = craft.app.request.getParam('search') %}
 
@@ -18,6 +18,8 @@
 
 {% set categories = craft.entries.section('stickercategory').all %}
 
+
+{% paginate stickersQuery as pageInfo, stickers %}
 
 {% block content %}
     <section class="intro">
@@ -43,6 +45,35 @@
                 {% endfor %}
             </div>
         </div>
+
+        <div class="products-pages">
+            <nav class="pagesNav" role="navigation" aria-label="Search result pagination" class="navTest">
+                {% if pageInfo.getPrevUrl() %}
+                    <a class="products-pages-button" href="{{ pageInfo.getPrevUrl() }}"><</a>
+                {% endif %}
+        
+                <ul class="paginationList">
+                  {% for p, url in pageInfo.getDynamicRangeUrls(5) %}
+                    <li>
+                      {{ tag('a', {
+                        text: p,
+                        href: url,
+                        class: 'products-pages-button',
+                        aria: {
+                          label: "Go to page #{p} of #{pageInfo.totalPages}",
+                        },
+                      }) }}
+                    </li>
+                  {% endfor %}
+                </ul>
+        
+                {% if pageInfo.getNextUrl() %}
+                    <a class="products-pages-button" href="{{ pageInfo.getNextUrl() }}">></a>
+                {% endif %}
+            </nav>
+        </div>
     </section>
 
+
+    
 {% endblock %}

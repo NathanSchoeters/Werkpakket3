@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .navbar{
     @include flexLayout(space-between);
     height: 100px;
@@ -89,7 +90,7 @@
 }
 .gallery{
     width: 100%;
-    margin: 30 0;
+    margin: 50px;
     @include flexLayout;
     flex-direction: column;
     &-title{
@@ -109,7 +110,7 @@
 .products{
     @include flexLayout;
     flex-direction: column;
-    padding: 100 0 0 0;
+    margin: 100px;
     &-filters{
         &-search{
             height: 30px;
@@ -121,7 +122,7 @@
         &-button{
             cursor: pointer;
             height: 30px;
-            width: 100px;
+            width: 150px;
             border: 2px solid $color-primary;
             border-radius: 5px;
             background-color: $color-white;
@@ -139,6 +140,10 @@
             height: 30px;
             background-color: $color-white;
             color: $color-dark-blue;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &:hover{
                 background-color: $color-primary;
                 color: $color-white;
@@ -146,6 +151,16 @@
         }
     }
 }
+.paginationList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.pagesNav{
+    display: flex;
+    flex-direction: row;
+}
+
 .footer{
     @include flexLayout(space-evenly);
     flex-direction: column;
