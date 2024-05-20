@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  d524c7ab-f34b-4624-9b6f-6d71245f7470:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2afd30ef-5fb7-40c1-a327-1489ae0e34c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 294126a1-12c4-43e0-83eb-3d2d7b9c14ea # new Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1326e342-ee5b-42b7-820f-c55496bcf019
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 88522b4c-978c-4263-8160-b0c17778ff36
+        userCondition: null
+handle: matrixtest
+hasTitleField: true
+icon: ''
+name: matrixTest
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

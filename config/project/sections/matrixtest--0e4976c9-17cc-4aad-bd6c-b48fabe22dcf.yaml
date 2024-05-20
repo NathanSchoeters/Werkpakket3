@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 99b402a4-fa5c-47f6-bafb-92595991104c # matrixTest
+handle: matrixtest
+maxAuthors: 1
+name: matrixTest
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4a826233-2673-4533-bdf4-5dd6f0487adc: # Illustrashop
+    enabledByDefault: true
+    hasUrls: true
+    template: matrixtest/_entry
+    uriFormat: 'matrixtest/{slug}'
+type: channel

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: newContent
+instructions: 'Make your own content'
+name: 'new Content'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - f7a67229-f99c-40e8-b985-7c7c3ed7d2c2 # newTextImage
+    - 5e28166a-2ab1-46bb-8328-368e476cf417 # Stickers Overview
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
