@@ -40,9 +40,15 @@
 
         <div class="gallery">
             <div class="cards-wrapper">
-                {% for sticker in stickers %}
-                    {% include "_snippets/_stickerCard.twig" %}
-                {% endfor %}
+                {% if stickers %}
+                    {% for sticker in stickers %}
+                        {% include "_snippets/_stickerCard.twig" %}
+                    {% endfor %}
+                {% else %}
+                    <h1>No stickers found.</h1>
+                {% endif %}
+                
+                
             </div>
         </div>
 
