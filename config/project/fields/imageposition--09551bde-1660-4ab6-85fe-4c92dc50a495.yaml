@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: imageposition
+instructions: 'Choose where you want to have the image'
+name: imagePosition
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image on the left'
+        -
+          - value
+          - left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image on the right'
+        -
+          - value
+          - right
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

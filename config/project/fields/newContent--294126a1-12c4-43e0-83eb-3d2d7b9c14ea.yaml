@@ -7,7 +7,8 @@ settings:
   createButtonLabel: null
   entryTypes:
     - f7a67229-f99c-40e8-b985-7c7c3ed7d2c2 # newTextImage
-    - 5e28166a-2ab1-46bb-8328-368e476cf417 # Stickers Overview
+    - 0c31d4c6-11c3-499d-846f-0326778ac5fe # newForm
+    - db76d38d-3ae1-4c18-89cf-245e9b84df65 # newProductBlock
   includeTableView: false
   maxEntries: null
   minEntries: null

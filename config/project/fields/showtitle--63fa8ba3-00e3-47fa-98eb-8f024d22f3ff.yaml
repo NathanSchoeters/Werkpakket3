@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: showtitle
+instructions: 'Do you want to show the title on the page?'
+name: showTitle
+searchable: false
+settings:
+  default: true
+  offLabel: 'hide title'
+  onLabel: 'show title'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,4 +1,4 @@
-color: null
+color: pink
 fieldLayouts:
   d524c7ab-f34b-4624-9b6f-6d71245f7470:
     tabs:
@@ -52,10 +52,10 @@ fieldLayouts:
         name: Content
         uid: 88522b4c-978c-4263-8160-b0c17778ff36
         userCondition: null
-handle: matrixtest
+handle: newpage
 hasTitleField: true
-icon: ''
-name: matrixTest
+icon: file-circle-plus
+name: newPage
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
