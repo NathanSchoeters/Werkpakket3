@@ -24,6 +24,11 @@ siteSettings:
     hasUrls: true
     template: _stickers/_entry
     uriFormat: 'our-stickers/{slug}'
+  bd303dcd-4fa3-453e-9981-fcc3995d5a89: # IllustrashopNL
+    enabledByDefault: true
+    hasUrls: true
+    template: _stickers/_entry
+    uriFormat: 'onze-stickers/{slug}'
 structure:
   maxLevels: null
   uid: 7ef3b58e-35ac-4faa-ac93-bdab7e292367

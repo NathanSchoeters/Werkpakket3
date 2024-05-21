@@ -24,4 +24,9 @@ siteSettings:
     hasUrls: true
     template: _contact/_contact.twig
     uriFormat: contact
+  bd303dcd-4fa3-453e-9981-fcc3995d5a89: # IllustrashopNL
+    enabledByDefault: true
+    hasUrls: true
+    template: _contact/_contact.twig
+    uriFormat: contact
 type: single

@@ -24,4 +24,9 @@ siteSettings:
     hasUrls: true
     template: index.twig
     uriFormat: __home__
+  bd303dcd-4fa3-453e-9981-fcc3995d5a89: # IllustrashopNL
+    enabledByDefault: true
+    hasUrls: true
+    template: _Nederlands/index.twig
+    uriFormat: __home__
 type: single
