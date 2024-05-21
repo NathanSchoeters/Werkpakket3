@@ -52,6 +52,57 @@ fieldLayouts:
         name: Content
         uid: 4ce23293-4586-4d8e-9876-87875f5e0434
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f71a819e-0877-407a-a17a-b82f88e5e2c0 # aboutTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16045a11-9e46-4ffb-93da-063750c9eeda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 324648bc-f878-478b-804e-1e657b33c79d # aboutDescription
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cbc5dbb-387b-4cb0-83f9-289befa4908e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a45df4e-9a9d-4d13-9a73-62265aafe1d4 # Fotos
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0547424-b863-414e-9d13-3a087d9e7f9a
+            userCondition: null
+            warning: null
+            width: 100
+        name: About
+        uid: 74b98e76-aac4-43a2-bdeb-aa764eb7aff5
+        userCondition: null
 handle: home
 hasTitleField: true
 icon: house

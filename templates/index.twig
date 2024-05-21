@@ -1,13 +1,13 @@
 {% extends "_layout.twig" %}
 {% block content %}
 
-{% set aboutImg = about.fotos.one() %}
+{% set aboutImg = home.fotos.one() %}
 <section class="about">
     <div class="about-info">
         <div class="about-info-left">
-            <h1 class="about-info-heading">{{about.title}}</h1>
+            <h1 class="about-info-heading">{{home.abouttitle}}</h1>
             <p class="about-info-text"> 
-                {{about.aboutdescription}}
+                {{home.aboutdescription}}
             </p>
         </div>
         <div class="about-info-right">
