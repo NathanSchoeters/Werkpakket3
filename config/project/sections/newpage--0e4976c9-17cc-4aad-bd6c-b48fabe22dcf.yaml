@@ -24,4 +24,9 @@ siteSettings:
     hasUrls: true
     template: newPage/_entry
     uriFormat: 'newpage/{slug}'
+  bd303dcd-4fa3-453e-9981-fcc3995d5a89: # IllustrashopNL
+    enabledByDefault: true
+    hasUrls: true
+    template: newPage/_entry
+    uriFormat: 'newpage/{slug}'
 type: channel
