@@ -34,7 +34,11 @@
                 <select class="products-filters-button" name="category" id="">
                         <option value="">all stickers</option>
                     {% for category in categories %}
-                        <option value="{{ category.id }}">{{ category.title}} stickers</option>
+                        <option value="{{ category.id }}"
+                        {% if categoryParam ==  category.id%}
+                        selected
+                        {% endif %}
+                        >{{ category.title}} stickers</option>
                     {% endfor %}
                 </select>
                 <button type="submit" name="all" class="products-filters-button package">Filter</button>
