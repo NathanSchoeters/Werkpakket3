@@ -1,20 +1,20 @@
 {% extends "_layout.twig" %}
 
-{% set stickersQuery = craft.entries.section('stickers').limit(6) %}
+{% set stickersQuery = craft.entries.section('stickers') %}
 
 {% set searchParam = craft.app.request.getParam('search') %}
 
 {% set categoryParam = craft.app.request.getParam('category') %}
 
 {% if categoryParam|length %}
-    {%  set stickersQuery = stickersQuery.relatedTO( { targetElement: categoryParam} ) %}
+    {%  set stickersQuery = stickersQuery.relatedTo( { targetElement: categoryParam} ) %}
 {% endif %}
 
 {% if searchParam|length %}
     {%  set stickersQuery = stickersQuery.search(searchParam) %}
 {% endif %}
 
-{% set stickers = stickersQuery.all() %}
+{% set stickers = stickersQuery.limit(6).all() %}
 
 {% set categories = craft.entries.section('stickercategory').all %}
 
@@ -31,10 +31,13 @@
         <div class="products-filters">
             <form action="">
                 <input type="text" name="search" id="" class="products-filters-search" placeholder="Search..">
-                {% for category in categories %}
-                    <button type="submit" name="category" class="products-filters-button" value="{{ category.id }}">{{ category.title}} stickers</button>
-                {% endfor %}
-                <button type="submit" name="all" class="products-filters-button package">All</button>
+                <select class="products-filters-button" name="category" id="">
+                        <option value="">all stickers</option>
+                    {% for category in categories %}
+                        <option value="{{ category.id }}">{{ category.title}} stickers</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" name="all" class="products-filters-button package">Filter</button>
             </form>
         </div>
 
@@ -47,8 +50,6 @@
                 {% else %}
                     <h1>No stickers found.</h1>
                 {% endif %}
-                
-                
             </div>
         </div>
 
@@ -79,7 +80,5 @@
             </nav>
         </div>
     </section>
-
-
     
 {% endblock %}
