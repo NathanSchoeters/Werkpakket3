@@ -3,7 +3,6 @@
 {% block content %}
 {% for blok in entry.newContent %}
 
-
 {% if blok.type.handle == 'newTextImage' %}
     {% set blokImg = blok.newimage.one() %}
 
