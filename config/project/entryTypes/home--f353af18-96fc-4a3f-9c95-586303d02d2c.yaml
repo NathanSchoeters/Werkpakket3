@@ -49,6 +49,36 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 26288c94-7ffc-42ab-85b3-95f4f552f079 # showcaseTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e300d89-5792-4fac-a648-8321d3141d3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2c92eeaa-396b-4703-9978-22ba146e4d0c # errorMessage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96d191da-669a-46e6-a73f-8a674f45d663
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 4ce23293-4586-4d8e-9876-87875f5e0434
         userCondition: null
@@ -109,8 +139,8 @@ icon: house
 name: Home
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

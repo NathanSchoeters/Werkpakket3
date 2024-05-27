@@ -22,7 +22,7 @@
 
 {% if stickers|length > 0%}
     <section class="gallery">
-        <h1 class="gallery-title">Best Sold</h1>
+        <h1 class="gallery-title">{{home.showcasetitle}}</h1>
         <div class="cards-wrapper">
             {% for sticker in stickers %}
                 {% include '_snippets/_stickerCard.twig' %}
