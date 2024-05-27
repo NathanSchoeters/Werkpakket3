@@ -1,4 +1,4 @@
-dateModified: 1716819279
+dateModified: 1716836459
 email:
   fromEmail: nathan.ddk@outlook.com
   fromName: Illustrashop
@@ -17,6 +17,7 @@ meta:
     0c71f84b-b6dc-4f7c-b27a-0e0ec496e0b9: Prijs # Prijs
     0e4976c9-17cc-4aad-bd6c-b48fabe22dcf: newPage # newPage
     1d47ddfe-72ec-4111-b1cd-3caa343d172b: Logo # Logo
+    2c92eeaa-396b-4703-9978-22ba146e4d0c: errorMessage # errorMessage
     03c0ccce-3c8f-4b90-b67e-5f599166b630: stickerCategory # stickerCategory
     3f297f3c-4b68-451d-840e-97f9cc710f6d: contact # contact
     4a826233-2673-4533-bdf4-5dd6f0487adc: Illustrashop # Illustrashop
@@ -40,6 +41,7 @@ meta:
     1279f5c0-f5c7-4b61-beea-a683143f92b6: stickerCategory # stickerCategory
     3842e4fb-a3c6-4d1e-b332-22fbec2db800: newImage # newImage
     09551bde-1660-4ab6-85fe-4c92dc50a495: imagePosition # imagePosition
+    26288c94-7ffc-42ab-85b3-95f4f552f079: showcaseTitle # showcaseTitle
     86945d3a-9e49-4245-b5cf-e27ed83e8f76: Images # Images
     294126a1-12c4-43e0-83eb-3d2d7b9c14ea: 'new Content' # new Content
     324648bc-f878-478b-804e-1e657b33c79d: aboutDescription # aboutDescription
