@@ -8,5 +8,5 @@ settings:
   offLabel: 'hide title'
   onLabel: 'show title'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Lightswitch
