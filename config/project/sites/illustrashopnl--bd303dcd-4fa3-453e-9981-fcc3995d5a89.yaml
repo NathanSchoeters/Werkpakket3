@@ -1,8 +1,8 @@
-baseUrl: 'http://werkpakket3.ddev.site/nl'
+baseUrl: '@baseUrlNl'
 enabled: '1'
 handle: illustrashopnl
 hasUrls: true
-language: nl
+language: nl-BE
 name: IllustrashopNL
 primary: false
 siteGroup: b983c117-aebe-4dd5-92b8-5d0d49b48b82 # Illustrashop
